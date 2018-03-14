@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
     >
 
 
@@ -35,6 +36,7 @@
             android:id="@+id/user_name"
             style="@style/LoginEditTextStyle"
             android:drawableLeft="@drawable/user_name"
+            android:singleLine="true"
             />
 
         <EditText
@@ -42,6 +44,8 @@
             android:id="@+id/user_password"
             style="@style/LoginEditTextStyle"
             android:drawableLeft="@drawable/user_password"
+            android:singleLine="true"
+            android:password="true"
             />
 
 

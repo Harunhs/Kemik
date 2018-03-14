@@ -1,4 +1,4 @@
-package com.example.harunsofuoglu.kemik.fragments;
+package com.example.harunsofuoglu.kemik.ui.login;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.example.harunsofuoglu.kemik.R;
-import com.facebook.login.widget.LoginButton;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -18,9 +18,6 @@ import butterknife.ButterKnife;
  */
 
 public class LoginFragment extends Fragment {
-
-
-
 
     @BindView(R.id.kemik_logo)
     ImageView kemikLogo;
@@ -31,22 +28,15 @@ public class LoginFragment extends Fragment {
     @BindView(R.id.user_password)
     EditText userPassword;
 
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view=inflater.inflate(R.layout.fragment_login,container,false);
-        ButterKnife.bind(this,view);
-
-
-
-        return view;
-
-    }
-
-    public static LoginFragment newInstance(){
+    public static LoginFragment newInstance() {
         return new LoginFragment();
     }
 
-
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_login, container, false);
+        ButterKnife.bind(this, view);
+        return view;
+    }
 
 }
