@@ -12,6 +12,7 @@ import com.example.harunsofuoglu.kemik.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by harunsofuoglu on 12.03.2018.
@@ -37,6 +38,11 @@ public class LoginFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         ButterKnife.bind(this, view);
         return view;
+    }
+
+    @OnClick(R.id.login_button)
+    void login() {
+
     }
 
 }
